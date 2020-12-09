@@ -1,0 +1,18 @@
+.place-details-tag {
+    position: relative;
+    display: inline-block;
+    font-family: AmaticSC;
+    font-weight: bold;
+    font-size: var(--size-tertiary-font-size);
+    padding: 0 10px;
+    transition: color 0.4s, background-color 0.4s;
+    transform: skewX(-20deg);
+    border: solid 2px var(--color-off-black);
+    >.place-details-tag-text {
+        transform: skewX(20deg);
+    }
+    &:hover {
+        color: var(--color-off-white);
+        background-color: var(--color-off-black);
+    }
+}
