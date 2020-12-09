@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.scss';
 
 interface IHeaderProps {
-    hasBackground : boolean;
+    hasBackground ?: boolean;
 }
 
 const Header : React.FC<IHeaderProps> = props => {
