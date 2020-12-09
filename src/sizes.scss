@@ -1,0 +1,13 @@
+:root{
+    --size-default-font-size: 18px;
+    --size-header-font-size: 100px;
+    --size-margin: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    :root{
+        --size-default-font-size: 14px;
+        --size-header-font-size: 70px;
+        --size-margin: 20px;
+    }
+}

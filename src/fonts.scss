@@ -1,0 +1,29 @@
+@font-face {
+    font-family: AmaticSC;
+    font-display: swap;
+    src: url('./fonts/AmaticSC-Regular.woff') format('woff'),
+        url('./fonts/AmaticSC-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: AmaticSC;
+    font-display: swap;
+    font-style: bold;
+    src: url('./fonts/AmaticSC-Bold.woff') format('woff'),
+         url('./fonts/AmaticSC-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: AnticDidone;
+    font-display: swap;
+    src: url('./fonts/AnticDidone-Regular.woff') format('woff'),
+         url('./fonts/AnticDidone-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: ReenieBeanie;
+    font-display: swap;
+    src: url('./fonts/ReenieBeanie-Regular.woff') format('woff'),
+         url('./fonts/ReenieBeanie-Regular.ttf') format('truetype');
+}

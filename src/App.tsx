@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.scss';
+import Header from './view/components/Header/Header';
 
 const App : React.FunctionComponent = props => {
   return (
     <div className={`App`}>
-      <h1>Shoreditch</h1>
-      <h2>By Maki</h2>
+        <Header hasBackground/>
     </div>
   )
 }
