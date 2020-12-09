@@ -3,11 +3,11 @@
     padding-top: 15px;
     color: var(--color-yellow);
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     &.has-background {
-        position: relative;
-        background-image: url(../../../images/brick.jpg);
-        background-position: center;
-        background-size: 100%;
+
     }
     >.shoreditch {
         font-family: ReenieBeanie;
