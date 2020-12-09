@@ -1,0 +1,14 @@
+.place-details-left {
+    width: calc(50vw - var(--size-margin));
+    margin-top: var(--size-small-margin);
+    margin-left: var(--size-margin);
+    position: absolute;
+    >.place-details-left-header {
+        background-color: var(--color-off-black);
+        color: var(--color-off-white);
+        font-family: ReenieBeanie;
+        font-size: var(--size-header-font-size);
+        text-align: center;
+        padding: 5px;
+    }
+}
