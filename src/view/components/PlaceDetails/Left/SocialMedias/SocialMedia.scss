@@ -1,0 +1,66 @@
+.place-details-social-media-a {
+    display: block;
+    >.place-details-social-media {
+        position: relative;
+        font-family: AmaticSC;
+        font-weight: bold;
+        font-size: var(--size-tertiary-font-size);
+        transition: color 0.4s, background-color 0.4s;
+        transform: skewX(-20deg);
+        margin-bottom: calc(var(--size-small-margin) / 4);
+        display: inline-block;
+        >.place-details-social-media-content {
+            display: inline-block;
+            padding: 0 10px;
+            border: solid 2px var(--color-yellow);
+            background-color: var(--color-yellow);
+            >.place-details-social-media-text {
+                transform: skewX(20deg);
+                color: var(--color-off-black);
+            }
+        }
+    }
+    
+    >.place-details-social-media-name {
+        font-family: AmaticSC;
+        font-weight: bold;
+        font-size: var(--size-tertiary-font-size);
+        color: var(--color-off-black);
+        margin-left: var(--size-very-small-margin);
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: text-bottom;
+        transform: skewX(-20deg);
+        >.hide {
+            visibility: hidden;
+            transform: skewX(20deg);
+            padding: 0 10px;
+        }
+        >.place-details-social-media-name-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateX(-100%) skewX(20deg);
+            transition: transform 0.8s;
+            transition-timing-function: cubic-bezier(1,0,0,1);
+            padding: 0 10px;
+        }
+    }
+
+    &:hover {
+        >.place-details-social-media {
+            >.place-details-social-media-content {
+                background-color: var(--color-off-black);
+                >.place-details-social-media-text { 
+                    color: var(--color-yellow);
+                }
+            }
+        }
+        >.place-details-social-media-name {
+            >.place-details-social-media-name-content {
+                transform: translateX(0) skewX(20deg);
+            }
+        }
+    }
+}
