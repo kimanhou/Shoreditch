@@ -1,3 +1,7 @@
 .place-details {
     position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }

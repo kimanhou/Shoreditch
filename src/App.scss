@@ -9,4 +9,6 @@
         line-height: calc(var(--size-default-font-size) * 1.5);
     }
     font-family: AnticDidone;
+    display: flex;
+    flex-direction: column;
 }

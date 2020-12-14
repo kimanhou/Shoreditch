@@ -2,7 +2,7 @@
     width: calc(50vw - var(--size-margin));
     margin-top: var(--size-small-margin);
     margin-left: var(--size-margin);
-    position: absolute;
+    background-color: white;
     >.place-details-left-header {
         background-color: var(--color-off-black);
         color: var(--color-off-white);
@@ -10,5 +10,8 @@
         font-size: var(--size-header-font-size);
         text-align: center;
         padding: 5px;
+    }
+    >.place-details-left-content {
+        padding: 0 5px;
     }
 }

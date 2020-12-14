@@ -1,5 +1,6 @@
 import React from 'react';
 import Left from './Left/Left';
+import Map from './Map/Map';
 import './PlaceDetails.scss';
 import Right from './Right/Right';
 
@@ -12,6 +13,7 @@ const PlaceDetails : React.FC<IPlaceDetailsProps> = props => {
         <div className={`place-details`}>
             <Left placeName='Yuzu'/>
             <Right/>
+            <Map />
         </div>
     )
 }
