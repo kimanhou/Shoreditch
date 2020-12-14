@@ -1,0 +1,15 @@
+.place-details {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+    .place-details {
+        display: block;
+        justify-content: unset;
+        flex-direction: unset;
+    }
+}

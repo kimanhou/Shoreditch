@@ -3,5 +3,12 @@
 @import './fonts.scss';
 
 .App {
+    p {
+        font-family: AnticDidone;
+        font-size: var(--size-default-font-size);
+        line-height: calc(var(--size-default-font-size) * 1.5);
+    }
     font-family: AnticDidone;
+    display: flex;
+    flex-direction: column;
 }
