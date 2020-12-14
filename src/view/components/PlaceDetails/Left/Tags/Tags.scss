@@ -4,6 +4,7 @@
     >.place-details-tags-column {
         display: inline-block;
         width: calc(50% - (var(--size-small-margin) / 2));
+        vertical-align: top;
         &.right {
             text-align: right;
             margin-left: var(--size-small-margin);

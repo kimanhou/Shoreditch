@@ -42,3 +42,10 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .right-photo {
+        height: calc(100vw - (var(--size-margin) * 2));
+        width: calc(100vw - (var(--size-margin) * 2));
+    }
+}

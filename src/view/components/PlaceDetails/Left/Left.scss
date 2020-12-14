@@ -15,3 +15,9 @@
         padding: 0 5px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .place-details-left {
+        width: calc(100vw - (var(--size-margin) * 2));
+    }
+}

@@ -2,3 +2,9 @@
     padding-right: var(--size-small-margin);
     padding-top: var(--size-small-margin);
 }
+
+@media screen and (max-width: 600px) {
+    .place-details-right {
+        padding-left: var(--size-margin);
+    }
+}
