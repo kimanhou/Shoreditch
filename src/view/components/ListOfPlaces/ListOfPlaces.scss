@@ -1,0 +1,15 @@
+.list-of-places {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+    .list-of-places {
+        display: block;
+        justify-content: unset;
+        flex-direction: unset;
+    }
+}

@@ -1,0 +1,26 @@
+.list-of-places-place {
+    color: var(--color-off-black);
+    width: 100%;
+    border-top: solid 2px var(--color-off-black);
+    transition: background-color 0.4s, color 0.4s;
+    >.list-of-places-place-content {
+        padding: 0 5px;
+        >.list-of-places-place-name {
+            font-family: ReenieBeanie;
+            font-size: var(--size-secondary-font-size);
+        }
+        &.last {
+            border-bottom: solid 2px var(--color-off-black);
+        }
+    }
+    &:hover {
+        background-color: var(--color-off-black);
+        >.list-of-places-place-content { 
+            >.list-of-places-place-name {
+                a {
+                    color: var(--color-off-white);
+                }
+            }
+        }
+    }
+}
