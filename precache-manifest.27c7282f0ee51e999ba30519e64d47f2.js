@@ -16,36 +16,36 @@ self.__precacheManifest = [
     "url": "Shoreditch/static/js/runtime~main.460e07cc.js"
   },
   {
-    "revision": "d254f533d9bb6fe4e84b07f21062381c",
-    "url": "Shoreditch/static/media/AnticDidone-Regular.d254f533.woff"
-  },
-  {
     "revision": "09a2fa178cd3968fc819fe8ae210eb28",
     "url": "Shoreditch/static/media/AmaticSC-Regular.09a2fa17.woff"
-  },
-  {
-    "revision": "8ba765ce9580a3bdae76b59130d0ef8a",
-    "url": "Shoreditch/static/media/AmaticSC-Bold.8ba765ce.ttf"
   },
   {
     "revision": "e9a42e339f93a719c17be53c386dbbfb",
     "url": "Shoreditch/static/media/AmaticSC-Regular.e9a42e33.ttf"
   },
   {
-    "revision": "e917b5a9dcd9a24157425a9aee6da804",
-    "url": "Shoreditch/static/media/AnticDidone-Regular.e917b5a9.ttf"
+    "revision": "d254f533d9bb6fe4e84b07f21062381c",
+    "url": "Shoreditch/static/media/AnticDidone-Regular.d254f533.woff"
   },
   {
     "revision": "b9de7658afae1fccab285540339f7b93",
     "url": "Shoreditch/static/media/AmaticSC-Bold.b9de7658.woff"
   },
   {
-    "revision": "dd40f505e7756d8cadc37ade775839d2",
-    "url": "Shoreditch/static/media/ReenieBeanie-Regular.dd40f505.woff"
+    "revision": "e917b5a9dcd9a24157425a9aee6da804",
+    "url": "Shoreditch/static/media/AnticDidone-Regular.e917b5a9.ttf"
+  },
+  {
+    "revision": "8ba765ce9580a3bdae76b59130d0ef8a",
+    "url": "Shoreditch/static/media/AmaticSC-Bold.8ba765ce.ttf"
   },
   {
     "revision": "dd40f505e7756d8cadc37ade775839d2",
     "url": "Shoreditch/static/media/ReenieBeanie-Regular.dd40f505.ttf"
+  },
+  {
+    "revision": "dd40f505e7756d8cadc37ade775839d2",
+    "url": "Shoreditch/static/media/ReenieBeanie-Regular.dd40f505.woff"
   },
   {
     "revision": "c930b9f6513cabf84aebd8f1da858b55",

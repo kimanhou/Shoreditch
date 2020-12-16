@@ -6,12 +6,12 @@
   "static/js/1.8ab01008.chunk.js.map": "Shoreditch/static/js/1.8ab01008.chunk.js.map",
   "runtime~main.js": "Shoreditch/static/js/runtime~main.460e07cc.js",
   "runtime~main.js.map": "Shoreditch/static/js/runtime~main.460e07cc.js.map",
-  "static/media/App.scss": "Shoreditch/static/media/ReenieBeanie-Regular.dd40f505.ttf",
+  "static/media/App.scss": "Shoreditch/static/media/ReenieBeanie-Regular.dd40f505.woff",
   "static/media/Header.scss": "Shoreditch/static/media/brick.c930b9f6.jpg",
   "static/media/Home.scss": "Shoreditch/static/media/home.a7e04368.jpg",
   "static/media/Map.scss": "Shoreditch/static/media/shoreditch-map.a47178f1.png",
   "static/css/main.49311742.chunk.css.map": "Shoreditch/static/css/main.49311742.chunk.css.map",
   "index.html": "Shoreditch/index.html",
-  "precache-manifest.998b10c0c6b28bfb06ec552ea8494f70.js": "Shoreditch/precache-manifest.998b10c0c6b28bfb06ec552ea8494f70.js",
+  "precache-manifest.27c7282f0ee51e999ba30519e64d47f2.js": "Shoreditch/precache-manifest.27c7282f0ee51e999ba30519e64d47f2.js",
   "service-worker.js": "Shoreditch/service-worker.js"
 }

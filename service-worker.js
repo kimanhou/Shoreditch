@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "Shoreditch/precache-manifest.998b10c0c6b28bfb06ec552ea8494f70.js"
+  "Shoreditch/precache-manifest.27c7282f0ee51e999ba30519e64d47f2.js"
 );
 
 workbox.clientsClaim();
