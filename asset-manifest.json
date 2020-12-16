@@ -1,17 +1,17 @@
 {
   "main.css": "./static/css/main.8d58f424.chunk.css",
-  "main.js": "./static/js/main.d19a4df6.chunk.js",
-  "main.js.map": "./static/js/main.d19a4df6.chunk.js.map",
+  "main.js": "./static/js/main.eea35647.chunk.js",
+  "main.js.map": "./static/js/main.eea35647.chunk.js.map",
   "static/js/1.8ab01008.chunk.js": "./static/js/1.8ab01008.chunk.js",
   "static/js/1.8ab01008.chunk.js.map": "./static/js/1.8ab01008.chunk.js.map",
   "runtime~main.js": "./static/js/runtime~main.4a686d48.js",
   "runtime~main.js.map": "./static/js/runtime~main.4a686d48.js.map",
-  "static/media/App.scss": "./static/media/ReenieBeanie-Regular.dd40f505.ttf",
+  "static/media/App.scss": "./static/media/AmaticSC-Regular.09a2fa17.woff",
   "static/media/Header.scss": "./static/media/brick.c930b9f6.jpg",
   "static/media/Home.scss": "./static/media/home.a7e04368.jpg",
   "static/media/Map.scss": "./static/media/shoreditch-map.a47178f1.png",
   "static/css/main.8d58f424.chunk.css.map": "./static/css/main.8d58f424.chunk.css.map",
   "index.html": "./index.html",
-  "precache-manifest.e22625f339ff7561d16f8eef661dbfd4.js": "./precache-manifest.e22625f339ff7561d16f8eef661dbfd4.js",
+  "precache-manifest.852c72d6e1ff980644ce12cd0d900b66.js": "./precache-manifest.852c72d6e1ff980644ce12cd0d900b66.js",
   "service-worker.js": "./service-worker.js"
 }
