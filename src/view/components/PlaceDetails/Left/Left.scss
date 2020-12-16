@@ -2,7 +2,8 @@
     width: calc(50vw - var(--size-margin));
     margin-top: var(--size-small-margin);
     margin-left: var(--size-margin);
-    background-color: white;
+    background-color: var(--color-off-white);
+    z-index: 1;
     >.place-details-left-header {
         background-color: var(--color-off-black);
         color: var(--color-off-white);

@@ -11,9 +11,9 @@ const PlaceDetails : React.FC<IPlaceDetailsProps> = props => {
 
     return(
         <div className={`place-details`}>
+            <Map />
             <Left placeName='Yuzu'/>
             <Right/>
-            <Map />
         </div>
     )
 }
