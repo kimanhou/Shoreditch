@@ -1,0 +1,21 @@
+.list-of-places-left {
+    width: calc(50vw - var(--size-margin));
+    margin-top: var(--size-small-margin);
+    margin-left: var(--size-margin);
+    margin-bottom: var(--size-small-margin);
+    background-color: var(--color-off-white);
+    z-index: 1;
+    >.list-of-places-header {
+        color: var(--color-off-black);
+        font-family: AmaticSC;
+        font-size: var(--size-header-font-size);
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .list-of-places-left {
+        width: calc(100vw - (var(--size-margin) * 2));
+    }
+}

@@ -19,4 +19,10 @@
             background-color: var(--color-off-black);
         }
     }
+    &.small {
+        font-size: var(--size-default-font-size);
+        >.place-details-tag-content {
+            border: solid 1px var(--color-off-black);
+        }
+    }
 }

@@ -1,11 +1,15 @@
+import Social from "../PlaceDetails/Left/SocialMedias/Social";
+
 export default class Place {
     name : string;
-    instagram : string;
-    website : string;
+    socialMedia : Social[];
+    tags : string[];
+    description : string;
 
-    constructor(name : string, instagram : string, website : string) {
+    constructor(name : string, socialMedia : Social[], tags : string[], description : string) {
         this.name = name;
-        this.instagram = instagram;
-        this.website = website;
+        this.socialMedia = socialMedia;
+        this.tags = tags;
+        this.description = description;
     }
 }
