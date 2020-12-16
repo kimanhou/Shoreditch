@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Choice.scss';
 
 interface IChoiceProps {
@@ -6,7 +7,7 @@ interface IChoiceProps {
     positionY : string;
     firstLine : string;
     secondLine : string;
-    onClick ?: () => void;
+    link : string;
 }
 
 const Choice : React.FC<IChoiceProps> = props => {
@@ -15,16 +16,18 @@ const Choice : React.FC<IChoiceProps> = props => {
     var halfRight = props.positionX == 'right' ? 'right-x' : '';
 
     return(
-        <div className={`choice ${middleY} ${halfLeft} ${halfRight}`} onClick={props.onClick}>
-            <div className={`choice-content`}>
-                <div className={`line first`}>
-                    {props.firstLine}
-                </div>
-                <div className={`line second`}>
-                    {props.secondLine}
+        <Link to={props.link}>
+            <div className={`choice ${middleY} ${halfLeft} ${halfRight}`}>
+                <div className={`choice-content`}>
+                    <div className={`line first`}>
+                        {props.firstLine}
+                    </div>
+                    <div className={`line second`}>
+                        {props.secondLine}
+                    </div>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

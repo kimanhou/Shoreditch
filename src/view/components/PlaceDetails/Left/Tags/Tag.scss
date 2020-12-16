@@ -24,5 +24,10 @@
         >.place-details-tag-content {
             border: solid 1px var(--color-off-black);
         }
+        &:hover {
+            >.place-details-tag-content {
+                border-color: var(--color-off-white);
+            }
+        }
     }
 }

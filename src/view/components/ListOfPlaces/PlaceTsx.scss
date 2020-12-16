@@ -17,7 +17,9 @@
         background-color: var(--color-off-black);
         >.list-of-places-place-content { 
             >.list-of-places-place-name {
-                color: var(--color-off-white);
+                a {
+                    color: var(--color-off-white);
+                }
             }
         }
     }
