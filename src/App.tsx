@@ -43,7 +43,7 @@ const App : React.FunctionComponent = props => {
 
     return (
         <div className={`App`}>
-            <HashRouter>
+            <HashRouter basename="Shoreditch">
                 <Switch>
                     <Route exact path="/">
                         <HomePage />
