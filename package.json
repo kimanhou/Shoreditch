@@ -1,7 +1,7 @@
 {
   "name": "contacts",
   "version": "0.1.0",
-  "homepage": "Shoreditch",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "react": "^16.5.2",
