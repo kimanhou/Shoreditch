@@ -1,16 +1,22 @@
 import React from 'react';
+import Place from '../../ListOfPlaces/Place';
 import './Right.scss';
 import RightPhoto from './RightPhoto';
 
 interface IRightProps {
+    place : Place | undefined;
 }
 
 const Right : React.FC<IRightProps> = props => {
 
+
     return(
         <div className={`place-details-right`}>
-            <RightPhoto caption='The food' photoCredits='@yuzulondon' url='https://www.instagram.com/p/CIRJrbrH31A/'/>
-            <RightPhoto caption='The place' photoCredits='@yuzulondon' url='https://www.instagram.com/p/B5N1yCGnNtB/'/>
+            {props.place != null && 
+                <>
+                    <RightPhoto caption='The food' photoCredits={props.place.getInstagram()} url={props.place.photoFoodUrl}/>
+                    <RightPhoto caption='The place' photoCredits={props.place.getInstagram()} url={props.place.photoPlaceUrl}/>
+                </>}
        </div>
     )
 }

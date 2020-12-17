@@ -15,7 +15,7 @@ const PlaceDetails : React.FC<IPlaceDetailsProps> = props => {
         <div className={`place-details`}>
             <Map />
             <Left place={props.place}/>
-            <Right />
+            <Right place={props.place}/>
         </div>
     )
 }
