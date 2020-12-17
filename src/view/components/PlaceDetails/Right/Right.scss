@@ -1,6 +1,12 @@
 .place-details-right {
     padding-right: var(--size-small-margin);
     padding-top: var(--size-small-margin);
+    position: relative;
+    left: 100vw;
+    transition: left 0.8s;
+    &.visible {
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
