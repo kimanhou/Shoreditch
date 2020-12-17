@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router';
 import Header from '../Header/Header';
 import ListOfPlaces from './ListOfPlaces';
-import Place from './Place';
+import Place from '../../../model/Place';
 
 interface IListOfPlacesPageProps {
     places : Place[];

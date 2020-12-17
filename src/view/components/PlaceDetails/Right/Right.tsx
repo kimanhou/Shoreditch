@@ -1,5 +1,5 @@
 import React from 'react';
-import Place from '../../ListOfPlaces/Place';
+import Place from '../../../../model/Place';
 import './Right.scss';
 import RightPhoto from './RightPhoto';
 

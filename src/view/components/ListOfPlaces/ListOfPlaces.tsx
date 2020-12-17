@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Left from './Left';
 import './ListOfPlaces.scss';
-import Place from './Place';
+import Place from '../../../model/Place';
 import Map from './../PlaceDetails/Map/Map';
 import Right from '../PlaceDetails/Right/Right';
 

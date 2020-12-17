@@ -1,5 +1,5 @@
 import React from 'react';
-import Social from './Social';
+import Social from '../../../../../model/Social';
 import SocialMedia from './SocialMedia';
 import './SocialMedias.scss';
 

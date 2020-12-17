@@ -1,0 +1,10 @@
+.arrow-back-place-details {
+    font-family: AmaticSC;
+    font-size: var(--size-default-font-size);
+    position: absolute;
+    top: calc(var(--size-small-margin) * (-1));
+    left: calc(var(--size-small-margin) * (-1));
+    &:hover {
+        color: (--color-yellow);
+    }
+}

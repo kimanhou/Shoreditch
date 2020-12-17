@@ -2,8 +2,9 @@ import React from 'react';
 import SocialMedias from '../PlaceDetails/Left/SocialMedias/SocialMedias';
 import Tags from '../PlaceDetails/Left/Tags/Tags';
 import './Left.scss';
-import Place from './Place';
+import Place from '../../../model/Place';
 import PlaceTsx from './PlaceTsx';
+import ArrowBack from '../PlaceDetails/ArrowBack/ArrowBack';
 
 interface ILeftProps {
     places : Place[];
@@ -30,6 +31,7 @@ const Left : React.FC<ILeftProps> = props => {
                 <div className={`place-details-content ${placeDetailsVisibleClassname}`}>
                     {props.selectedPlace != null &&
                     <>
+                        <ArrowBack />
                         <div className={`place-details-left-header`}>
                             {props.selectedPlace.name}
                         </div>

@@ -3,9 +3,8 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import HomePage from './view/components/Home/HomePage';
 import ListOfPlacesPage from './view/components/ListOfPlaces/ListOfPlacesPage';
-import Place from './view/components/ListOfPlaces/Place';
-import Social, { SocialMediaPlatform } from './view/components/PlaceDetails/Left/SocialMedias/Social';
-import PlaceDetailsPage from './view/components/PlaceDetails/PlaceDetailsPage';
+import Place from './model/Place';
+import Social, { SocialMediaPlatform } from './model/Social';
 
 const App : React.FunctionComponent = props => {
     const yuzuDescription = 'Tucked in a hidden back alley between buzzing Liverpool Street and even more buzzing Spitafields Market, Yuzu is a haven of peace. The experience of dining in a minimalist decor with earthy colors and dimmed lights will make you forget you are in a vibrant neighborhood. The food is both traditional and contemporary. Lunch is kaiten, dinner is more sophisticated with a French influence. Always delicious !';

@@ -5,6 +5,7 @@
     background-position: center;
     margin-bottom: var(--size-small-margin);
     position: relative;
+    background-color: var(--color-yellow);
     >.right-photo-caption, >.right-photo-photo-credits {
         opacity: 0;
         transition: opacity 0.4s;

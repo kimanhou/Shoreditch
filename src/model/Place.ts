@@ -1,4 +1,4 @@
-import Social, { SocialMediaPlatform } from "../PlaceDetails/Left/SocialMedias/Social";
+import Social, { SocialMediaPlatform } from "./Social";
 
 export default class Place {
     name : string;
