@@ -1,6 +1,6 @@
 import React from 'react';
 import './PlaceTsx.scss';
-import Place from './Place';
+import Place from '../../../model/Place';
 import Tags from '../PlaceDetails/Left/Tags/Tags';
 import { Link } from 'react-router-dom';
 

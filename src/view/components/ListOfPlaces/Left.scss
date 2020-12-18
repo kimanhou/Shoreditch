@@ -5,12 +5,48 @@
     margin-bottom: var(--size-small-margin);
     background-color: var(--color-off-white);
     z-index: 1;
-    >.list-of-places-header {
-        color: var(--color-off-black);
-        font-family: AmaticSC;
-        font-size: var(--size-header-font-size);
-        text-align: center;
-        padding: 5px;
+    >.big-container {
+        width: 200%;
+        >.list-of-places-content {
+            position: relative;
+            left: 0;
+            transition: left 0.8s;
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+            >.list-of-places-header {
+                color: var(--color-off-black);
+                font-family: AmaticSC;
+                font-size: var(--size-header-font-size);
+                text-align: center;
+                padding: 5px;
+            }
+            &.hidden {
+                left: -100vw;
+            }
+        }
+        >.place-details-content {
+            position: relative;
+            left: 100vw;
+            transition: left 0.8s;
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+            >.place-details-left-header {
+                background-color: var(--color-off-black);
+                color: var(--color-off-white);
+                font-family: ReenieBeanie;
+                font-size: var(--size-header-font-size);
+                text-align: center;
+                padding: 5px;
+            }
+            >.place-details-left-content {
+                padding: 0 5px;
+            }
+            &.visible {
+                left: -50%;
+            }
+        }
     }
 }
 
