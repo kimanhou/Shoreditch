@@ -1,30 +1,50 @@
-export enum Tag {
+export default class Tag {
+    readonly label : string;
+    readonly description : string;
+
+    constructor(label : string, description : string){
+        this.label = label;
+        this.description = description;
+    }
+
+    static deserialize = (json : any) => {
+        if(typeof json != 'string'){
+            throw new Error("Expected string when deserializing Tag");
+        }
+        for(let key in Tag){
+            if(key.toLowerCase() == json.toLowerCase()){
+                return ((Tag as any)[key]) as Tag;
+            }
+        }
+        throw new Error(`Did not find Tag with label ${json}`);
+    }
+
     // Ambiance
-    LOCALSONLY = 'Locals only',
-    POPULAR = 'Popular',
-    DATE = 'Perfect for dates',
-    SHARING = 'Perfect for sharing',
-    QUIRKY = 'Quirky',
-    FAST = 'Fast',
-    MARKET = 'Market stall',
-    INTIMATE = 'Intimate atmosphere',
-    TAKEAWAY = 'Take away',
+    static LOCALSONLY = new Tag('LOCALSONLY', 'Locals only');
+    static POPULAR = new Tag('POPULAR', 'Popular');
+    static DATE = new Tag('DATE', 'Perfect for dates');
+    static SHARING = new Tag('SHARING', 'Perfect for sharing');
+    static QUIRKY = new Tag('QUIRKY', 'Quirky');
+    static FAST = new Tag('FAST', 'Fast');
+    static MARKET = new Tag('MARKET', 'Market stall');
+    static INTIMATE = new Tag('INTIMATE', 'Intimate atmosphere');
+    static TAKEAWAY = new Tag('TAKEAWAY', 'Take away');
 
     // Food
-    PIZZA = 'Great pizza',
-    SUSHI = 'Great sushi',
-    INDIAN = 'Great Indian food',
-    BURGER = 'Great burgers',
-    ITALIAN = 'Great Italian food',
-    FRENCH = 'Great French food',
-    ASIAN = 'Great Asian food', // includes Burmese, Vietnamese, Thai, Chinese, Japanese
+    static PIZZA = new Tag('PIZZA', 'Great pizza');
+    static SUSHI = new Tag('SUSHI', 'Great sushi');
+    static INDIAN = new Tag('INDIAN', 'Great Indian food');
+    static BURGER = new Tag('BURGER', 'Great burgers');
+    static ITALIAN = new Tag('ITALIAN', 'Great Italian food');
+    static FRENCH = new Tag('FRENCH', 'Great French food');
+    static ASIAN = new Tag('ASIAN', 'Great Asian food'); // includes Burmese, Vietnamese, Thai, Chinese, Japanese
 
     // Drink
-    BEER = 'Great beer',
-    COCKTAIL = 'Great cocktails',
-    PUB = 'Great pub',
+    static BEER = new Tag('BEER', 'Great beer');
+    static COCKTAIL = new Tag('COCKTAIL', 'Great cocktails');
+    static PUB = new Tag('PUB', 'Great pub');
 
     // Budget
-    CHEAP = 'Cheap eats',
-    FANCY = 'Fancy eats'
+    static CHEAP = new Tag('CHEAP', 'Cheap eats');
+    static FANCY = new Tag('FANCY', 'Fancy eats');
 }

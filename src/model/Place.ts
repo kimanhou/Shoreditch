@@ -1,5 +1,5 @@
 import Social, { SocialMediaPlatform } from "./Social";
-import { Tag } from "./Tag";
+import Tag from "./Tag";
 
 export default class Place {
     name : string;

@@ -4,6 +4,7 @@
     position: relative;
     left: 100vw;
     transition: left 0.8s;
+    z-index: 1;
     &.visible {
         left: 0;
     }

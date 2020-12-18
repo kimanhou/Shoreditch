@@ -3,7 +3,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Place from './model/Place';
 import Social, { SocialMediaPlatform } from './model/Social';
-import { Tag } from './model/Tag';
+import Tag from './model/Tag';
 import HomePage from './view/components/Home/HomePage';
 import ListOfPlacesPage from './view/components/ListOfPlaces/ListOfPlacesPage';
 import QuestionPage from './view/components/Questions/QuestionPage';
