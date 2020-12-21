@@ -9,7 +9,7 @@ export default class Tag {
 
     static deserialize = (json : any) => {
         if(typeof json != 'string'){
-            throw new Error("Expected string when deserializing Tag");
+            throw new Error("Expected type string when deserializing Tag but got something else.");
         }
         for(let key in Tag){
             if(key.toLowerCase() == json.toLowerCase()){
@@ -17,6 +17,29 @@ export default class Tag {
             }
         }
         throw new Error(`Did not find Tag with label ${json}`);
+    }
+
+    equals = (tag1 : Tag) => {
+        if (this.label == tag1.label) {
+            return true;
+        }
+        return false;
+    }
+
+    isIncluded = (tags : Tag[]) => {
+        if (tags.filter(t => t.equals(this)).length > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    static intersects = (tags1 : Tag[], tags2 : Tag[]) => {
+        for (let t of tags1) {
+            if (t.isIncluded(tags2)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     // Ambiance

@@ -15,11 +15,9 @@ const ListOfPlacesPage : React.FC<IListOfPlacesPageProps> = props => {
     let tagsString = queryParams['tags'];
     let tags : Tag[] = [];
     if (tagsString != undefined) {
-        console.log(tagsString);
         tags = (JSON.parse(tagsString) as string[]).map(Tag.deserialize);
     }
-    console.log(tags);
-
+    let displayedPlaces = props.places.filter(t => Tag.intersects(t.tags, tags));
 
     let { placeShortName } = useParams<{placeShortName ?: string}>();
     var selectedPlace = props.places.find(t => t.shortName == placeShortName);
@@ -27,7 +25,7 @@ const ListOfPlacesPage : React.FC<IListOfPlacesPageProps> = props => {
     return(
         <div className={`list-of-places-page`}>
             <Header hasBackground/>
-            <ListOfPlaces places={props.places} selectedPlace={selectedPlace}/>
+            <ListOfPlaces places={displayedPlaces} selectedPlace={selectedPlace}/>
         </div>
     )
 }
