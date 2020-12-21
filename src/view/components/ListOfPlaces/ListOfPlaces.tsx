@@ -4,17 +4,19 @@ import './ListOfPlaces.scss';
 import Place from '../../../model/Place';
 import Map from './../PlaceDetails/Map/Map';
 import Right from '../PlaceDetails/Right/Right';
+import Tag from '../../../model/Tag';
 
 interface IListOfPlacesProps {
     places : Place[];
     selectedPlace : Place | undefined;
+    tags : Tag[];
 }
 
 const ListOfPlaces : React.FC<IListOfPlacesProps> = props => {
     return(
         <div className={`list-of-places`}>
             <Map />
-            <Left places={props.places} selectedPlace={props.selectedPlace} />
+            <Left places={props.places} selectedPlace={props.selectedPlace} tags={props.tags} />
             <Right place={props.selectedPlace} />
         </div>
     )
