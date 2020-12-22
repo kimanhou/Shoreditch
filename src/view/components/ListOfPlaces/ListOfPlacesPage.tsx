@@ -25,7 +25,7 @@ const ListOfPlacesPage : React.FC<IListOfPlacesPageProps> = props => {
     return(
         <div className={`list-of-places-page`}>
             <Header hasBackground/>
-            <ListOfPlaces places={displayedPlaces} selectedPlace={selectedPlace} tags={tags}/>
+            <ListOfPlaces places={displayedPlaces} selectedPlace={selectedPlace} tags={tags} />
         </div>
     )
 }

@@ -42,6 +42,13 @@ export default class Tag {
         return false;
     }
 
+    static getAllTags = () => {
+        return [ Tag.LOCALSONLY, Tag.POPULAR, Tag.DATE, Tag.SHARING, Tag.QUIRKY, Tag.FAST, Tag.MARKET, Tag.INTIMATE, Tag.TAKEAWAY,
+                 Tag.PIZZA, Tag.SUSHI, Tag.INDIAN, Tag.BURGER, Tag.ITALIAN, Tag.FRENCH, Tag.ASIAN,
+                 Tag.BEER, Tag.COCKTAIL, Tag.PUB,
+                 Tag.CHEAP, Tag.FANCY ];
+    }
+
     // Ambiance
     static LOCALSONLY = new Tag('LOCALSONLY', 'Locals only');
     static POPULAR = new Tag('POPULAR', 'Popular');

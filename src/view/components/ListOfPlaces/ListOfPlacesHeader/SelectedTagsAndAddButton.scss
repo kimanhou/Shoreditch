@@ -1,0 +1,8 @@
+.selected-tags-and-add-button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    >.selected-tags-and-add-button-left {
+        flex: 1;
+    }
+}

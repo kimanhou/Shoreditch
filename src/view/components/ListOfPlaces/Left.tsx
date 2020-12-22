@@ -6,7 +6,8 @@ import Place from '../../../model/Place';
 import PlaceTsx from './PlaceTsx';
 import ArrowBack from '../PlaceDetails/ArrowBack/ArrowBack';
 import Tag from '../../../model/Tag';
-import SelectedTags from './SelectedTags';
+import SelectedTags from './ListOfPlacesHeader/SelectedTags';
+import SelectedTagsAndAddButton from './ListOfPlacesHeader/SelectedTagsAndAddButton';
 
 interface ILeftProps {
     places : Place[];
@@ -24,7 +25,7 @@ const Left : React.FC<ILeftProps> = props => {
                 <div className={`list-of-places-content ${listHiddenClassname}`}>
                     <div className={`list-of-places-header`}>
                         The places
-                        <SelectedTags tags={props.tags} />
+                        <SelectedTagsAndAddButton selectedTags={props.tags} />
                     </div>
                     <div className={`list-of-places-places`}>
                         {props.places.slice(0, props.places.length - 1).map(t => <PlaceTsx place={t}/>)}

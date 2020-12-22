@@ -30,4 +30,10 @@
             }
         }
     }
+    &.selected {
+        >.place-details-tag-content {
+            color: var(--color-off-white);
+            background-color: var(--color-off-black);
+        }
+    }
 }
