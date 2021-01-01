@@ -19,6 +19,10 @@ export default class Tag {
         throw new Error(`Did not find Tag with label ${json}`);
     }
 
+    toJSON = () => {
+        return this.label.toLowerCase();
+    }
+
     equals = (tag1 : Tag) => {
         if (this.label == tag1.label) {
             return true;

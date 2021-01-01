@@ -6,6 +6,8 @@ import './SelectedTagsAndAddButton.scss';
 
 interface ISelectedTagsAndAddButtonProps {
     selectedTags : Tag[];
+    onAdd : (tag : Tag) => void;
+    onRemove : (tag : Tag) => void;
 }
 
 const SelectedTagsAndAddButton : React.FC<ISelectedTagsAndAddButtonProps> = props => {
@@ -15,7 +17,7 @@ const SelectedTagsAndAddButton : React.FC<ISelectedTagsAndAddButtonProps> = prop
                 <SelectedTags tags={props.selectedTags} />
             </div>
             <div className={`selected-tags-and-add-button-right`}>
-                <AddTags selectedTags={props.selectedTags} />
+                <AddTags selectedTags={props.selectedTags} onAdd={props.onAdd} onRemove={props.onRemove} />
             </div>
         </div>
     );

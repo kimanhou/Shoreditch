@@ -5,6 +5,8 @@ import './AddTags.scss';
 
 interface IAddTagsProps {
     selectedTags : TagModel[];
+    onAdd : (tag : TagModel) => void;
+    onRemove : (tag : TagModel) => void;
 }
 
 const AddTags : React.FC<IAddTagsProps> = props => {
@@ -17,6 +19,15 @@ const AddTags : React.FC<IAddTagsProps> = props => {
         setVisible(!visible);
     }
 
+    const onToggle = (tag : TagModel) => {
+        if (tag.isIncluded(props.selectedTags)) {
+            props.onRemove(tag);
+        }
+        else {
+            props.onAdd(tag);
+        }
+    }
+
     return (
         <div className={`add-tags`} onClick={onClick}>
             <div className={`add-tags-plus`}>
@@ -24,7 +35,7 @@ const AddTags : React.FC<IAddTagsProps> = props => {
             </div>
             
             <div className={`all-tags ${visibleClassname}`}>
-                {allTags.map(t => <Tag text={t.description} size='small' isSelected={t.isIncluded(props.selectedTags)}/> )}
+                {allTags.map(t => <Tag text={t.description} size='small' isSelected={t.isIncluded(props.selectedTags)} onClick={() => onToggle(t)}/> )}
             </div>
         </div>
     );

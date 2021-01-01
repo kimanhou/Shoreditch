@@ -10,13 +10,15 @@ interface IListOfPlacesProps {
     places : Place[];
     selectedPlace : Place | undefined;
     tags : Tag[];
+    onAdd : (tag : Tag) => void;
+    onRemove : (tag : Tag) => void;
 }
 
 const ListOfPlaces : React.FC<IListOfPlacesProps> = props => {
     return(
         <div className={`list-of-places`}>
             <Map />
-            <Left places={props.places} selectedPlace={props.selectedPlace} tags={props.tags} />
+            <Left places={props.places} selectedPlace={props.selectedPlace} tags={props.tags} onAdd={props.onAdd} onRemove={props.onRemove} />
             <Right place={props.selectedPlace} />
         </div>
     )

@@ -1,18 +1,19 @@
 import React from 'react';
+import Place from '../../../model/Place';
+import Tag from '../../../model/Tag';
+import ArrowBack from '../PlaceDetails/ArrowBack/ArrowBack';
 import SocialMedias from '../PlaceDetails/Left/SocialMedias/SocialMedias';
 import Tags from '../PlaceDetails/Left/Tags/Tags';
 import './Left.scss';
-import Place from '../../../model/Place';
-import PlaceTsx from './PlaceTsx';
-import ArrowBack from '../PlaceDetails/ArrowBack/ArrowBack';
-import Tag from '../../../model/Tag';
-import SelectedTags from './ListOfPlacesHeader/SelectedTags';
 import SelectedTagsAndAddButton from './ListOfPlacesHeader/SelectedTagsAndAddButton';
+import PlaceTsx from './PlaceTsx';
 
 interface ILeftProps {
     places : Place[];
     selectedPlace : Place | undefined;
     tags : Tag[];
+    onAdd : (tag : Tag) => void;
+    onRemove : (tag : Tag) => void;
 }
 
 const Left : React.FC<ILeftProps> = props => {
@@ -25,7 +26,7 @@ const Left : React.FC<ILeftProps> = props => {
                 <div className={`list-of-places-content ${listHiddenClassname}`}>
                     <div className={`list-of-places-header`}>
                         The places
-                        <SelectedTagsAndAddButton selectedTags={props.tags} />
+                        <SelectedTagsAndAddButton selectedTags={props.tags} onAdd={props.onAdd} onRemove={props.onRemove} />
                     </div>
                     <div className={`list-of-places-places`}>
                         {props.places.slice(0, props.places.length - 1).map(t => <PlaceTsx place={t}/>)}
