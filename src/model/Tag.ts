@@ -1,10 +1,19 @@
+export enum TagCategory {
+    ATMOSPHERE = 'Atmosphere',
+    CUISINE = 'Cuisine',
+    DRINKS = 'Drinks',
+    BUDGET = 'Budget'
+}
+
 export default class Tag {
     readonly label : string;
     readonly description : string;
+    readonly tagCategory : TagCategory;
 
-    constructor(label : string, description : string){
+    constructor(label : string, description : string, tagCategory : TagCategory){
         this.label = label;
         this.description = description;
+        this.tagCategory = tagCategory;
     }
 
     static deserialize = (json : any) => {
@@ -53,32 +62,41 @@ export default class Tag {
                  Tag.CHEAP, Tag.FANCY ];
     }
 
+    static getAllTagCategories = () => {
+        return [ TagCategory.CUISINE, TagCategory.ATMOSPHERE, TagCategory.DRINKS, TagCategory.BUDGET ];
+    }
+
+    static getTagsByCategory = (category : TagCategory) => {
+        const allTags = Tag.getAllTags();
+        return allTags.filter(t => t.tagCategory == category);
+    }
+
     // Ambiance
-    static LOCALSONLY = new Tag('LOCALSONLY', 'Locals only');
-    static POPULAR = new Tag('POPULAR', 'Popular');
-    static DATE = new Tag('DATE', 'Perfect for dates');
-    static SHARING = new Tag('SHARING', 'Perfect for sharing');
-    static QUIRKY = new Tag('QUIRKY', 'Quirky');
-    static FAST = new Tag('FAST', 'Fast');
-    static MARKET = new Tag('MARKET', 'Market stall');
-    static INTIMATE = new Tag('INTIMATE', 'Intimate atmosphere');
-    static TAKEAWAY = new Tag('TAKEAWAY', 'Take away');
+    static LOCALSONLY = new Tag('LOCALSONLY', 'Locals only', TagCategory.ATMOSPHERE);
+    static POPULAR = new Tag('POPULAR', 'Popular', TagCategory.ATMOSPHERE);
+    static DATE = new Tag('DATE', 'Perfect for dates', TagCategory.ATMOSPHERE);
+    static SHARING = new Tag('SHARING', 'Perfect for sharing', TagCategory.ATMOSPHERE);
+    static QUIRKY = new Tag('QUIRKY', 'Quirky', TagCategory.ATMOSPHERE);
+    static FAST = new Tag('FAST', 'Fast', TagCategory.ATMOSPHERE);
+    static MARKET = new Tag('MARKET', 'Market stall', TagCategory.ATMOSPHERE);
+    static INTIMATE = new Tag('INTIMATE', 'Intimate atmosphere', TagCategory.ATMOSPHERE);
+    static TAKEAWAY = new Tag('TAKEAWAY', 'Take away', TagCategory.ATMOSPHERE);
 
     // Food
-    static PIZZA = new Tag('PIZZA', 'Great pizza');
-    static SUSHI = new Tag('SUSHI', 'Great sushi');
-    static INDIAN = new Tag('INDIAN', 'Great Indian food');
-    static BURGER = new Tag('BURGER', 'Great burgers');
-    static ITALIAN = new Tag('ITALIAN', 'Great Italian food');
-    static FRENCH = new Tag('FRENCH', 'Great French food');
-    static ASIAN = new Tag('ASIAN', 'Great Asian food'); // includes Burmese, Vietnamese, Thai, Chinese, Japanese
+    static PIZZA = new Tag('PIZZA', 'Great pizza', TagCategory.CUISINE);
+    static SUSHI = new Tag('SUSHI', 'Great sushi', TagCategory.CUISINE);
+    static INDIAN = new Tag('INDIAN', 'Great Indian food', TagCategory.CUISINE);
+    static BURGER = new Tag('BURGER', 'Great burgers', TagCategory.CUISINE);
+    static ITALIAN = new Tag('ITALIAN', 'Great Italian food', TagCategory.CUISINE);
+    static FRENCH = new Tag('FRENCH', 'Great French food', TagCategory.CUISINE);
+    static ASIAN = new Tag('ASIAN', 'Great Asian food', TagCategory.CUISINE); // includes Burmese, Vietnamese, Thai, Chinese, Japanese
 
     // Drink
-    static BEER = new Tag('BEER', 'Great beer');
-    static COCKTAIL = new Tag('COCKTAIL', 'Great cocktails');
-    static PUB = new Tag('PUB', 'Great pub');
+    static BEER = new Tag('BEER', 'Great beer', TagCategory.DRINKS);
+    static COCKTAIL = new Tag('COCKTAIL', 'Great cocktails', TagCategory.DRINKS);
+    static PUB = new Tag('PUB', 'Great pub', TagCategory.DRINKS);
 
     // Budget
-    static CHEAP = new Tag('CHEAP', 'Cheap eats');
-    static FANCY = new Tag('FANCY', 'Fancy eats');
+    static CHEAP = new Tag('CHEAP', 'Cheap eats', TagCategory.BUDGET);
+    static FANCY = new Tag('FANCY', 'Fancy eats', TagCategory.BUDGET);
 }
