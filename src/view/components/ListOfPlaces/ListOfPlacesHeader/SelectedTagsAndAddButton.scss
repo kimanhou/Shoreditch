@@ -1,8 +1,18 @@
 .selected-tags-and-add-button {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    >.selected-tags-and-add-button-left {
-        flex: 1;
+    position: relative;
+    >.add-tags-plus {
+        position: absolute;
+        top: 0;
+        right: 0;
+        -webkit-text-fill-color: var(--color-off-white);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--color-off-black);
+        line-height: var(--size-default-font-size);
+        margin-top: -5px;
+        cursor: pointer;
+        &:hover {
+            -webkit-text-fill-color: var(--color-off-black);
+        }
     }
 }

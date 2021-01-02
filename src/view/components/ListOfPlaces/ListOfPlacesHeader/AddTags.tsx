@@ -7,17 +7,13 @@ interface IAddTagsProps {
     selectedTags : TagModel[];
     onAdd : (tag : TagModel) => void;
     onRemove : (tag : TagModel) => void;
+    isVisible : boolean;
 }
 
 const AddTags : React.FC<IAddTagsProps> = props => {
     const allTags = TagModel.getAllTags();
 
-    const [visible, setVisible] = useState(false);
-    var visibleClassname = visible ? 'visible' : 'hidden';
-
-    const onClick = () => {
-        setVisible(!visible);
-    }
+    var visibleClassname = props.isVisible ? 'visible' : 'hidden';
 
     const onToggle = (tag : TagModel) => {
         if (tag.isIncluded(props.selectedTags)) {
@@ -29,12 +25,8 @@ const AddTags : React.FC<IAddTagsProps> = props => {
     }
 
     return (
-        <div className={`add-tags`} onClick={onClick}>
-            <div className={`add-tags-plus`}>
-                +
-            </div>
-            
-            <div className={`all-tags ${visibleClassname}`}>
+        <div className={`add-tags ${visibleClassname}`}>
+            <div className={`all-tags`}>
                 {allTags.map(t => <Tag text={t.description} size='small' isSelected={t.isIncluded(props.selectedTags)} onClick={() => onToggle(t)}/> )}
             </div>
         </div>
