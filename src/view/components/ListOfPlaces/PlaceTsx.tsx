@@ -3,6 +3,7 @@ import './PlaceTsx.scss';
 import Place from '../../../model/Place';
 import Tags from '../PlaceDetails/Left/Tags/Tags';
 import { Link } from 'react-router-dom';
+import Tag from '../../../model/Tag';
 
 interface IPlaceProps {
     place : Place;

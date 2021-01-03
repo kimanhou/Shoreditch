@@ -15,10 +15,10 @@ const Tags : React.FC<ITagsProps> = props => {
     return(
         <div className={`place-details-tags`}>
             <div className={`place-details-tags-column left`}>
-                {evenIndexes.map(t => <Tag text={t.description} size={props.size}/>)}
+                {evenIndexes.map(t => <Tag tag={t} size={props.size}/>)}
             </div>
             <div className={`place-details-tags-column right`}>
-                {oddIndexes.map(t => <Tag text={t.description} size={props.size}/>)}
+                {oddIndexes.map(t => <Tag tag={t} size={props.size}/>)}
             </div>
        </div>
     )

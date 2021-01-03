@@ -20,7 +20,7 @@ const SelectedTagsAndAddButton : React.FC<ISelectedTagsAndAddButtonProps> = prop
     return (
         <div className={`selected-tags-and-add-button`}>
             <div className={`selected-tags-and-add-button-left`}>
-                <SelectedTags tags={props.selectedTags} />
+                <SelectedTags tags={props.selectedTags} onRemove={props.onRemove}/>
             </div>
             <div className={`selected-tags-and-add-button-right`}>
                 <AddTags selectedTags={props.selectedTags} onAdd={props.onAdd} onRemove={props.onRemove} isVisible={visible} />

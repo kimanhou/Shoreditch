@@ -6,6 +6,7 @@ interface IArrowBackProps {
 }
 
 const ArrowBack : React.FC<IArrowBackProps> = props => {
+    
     return(
         <Link to='/places/' className={`arrow-back-place-details`}>
             &lt; BACK

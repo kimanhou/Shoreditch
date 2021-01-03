@@ -4,6 +4,7 @@
     position: absolute;
     top: calc(var(--size-small-margin) * (-1));
     left: calc(var(--size-small-margin) * (-1));
+    cursor: pointer;
     &:hover {
         color: (--color-yellow);
     }

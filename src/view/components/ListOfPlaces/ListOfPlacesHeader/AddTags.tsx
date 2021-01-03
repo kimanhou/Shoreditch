@@ -11,7 +11,6 @@ interface IAddTagsProps {
 }
 
 const AddTags : React.FC<IAddTagsProps> = props => {
-    const allTags = TagModel.getAllTags();
     const allTagCategories = TagModel.getAllTagCategories();
 
     var visibleClassname = props.isVisible ? 'visible' : 'hidden';
@@ -31,7 +30,7 @@ const AddTags : React.FC<IAddTagsProps> = props => {
                 {allTagCategories.map(category => 
                     <div className={`tag-category`}>
                         <div className={`tag-category-header`}>{category}</div>
-                        {TagModel.getTagsByCategory(category).map(t => <Tag text={t.description} size='small' isSelected={t.isIncluded(props.selectedTags)} onClick={() => onToggle(t)}/> )}
+                        {TagModel.getTagsByCategory(category).map(t => <Tag tag={t} size='small' isSelected={t.isIncluded(props.selectedTags)} onClick={() => onToggle(t)} cursorPointer /> )}
                     </div>)}
             </div>
         </div>

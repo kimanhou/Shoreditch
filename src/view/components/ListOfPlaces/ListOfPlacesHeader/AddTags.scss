@@ -12,12 +12,12 @@
         flex-wrap: wrap;
         border-top: dashed 2px var(--color-off-black);
         display: flex;
-        padding: 0 5px;
+        padding: 0 var(--size-tiny-margin);
         padding-top: var(--size-very-small-margin);
         >.tag-category {
             >.tag-category-header {
                 font-size: var(--size-secondary-font-size);
-                margin-bottom: 5px;
+                margin-bottom: var(--size-tiny-margin);
             }
         }
         >* {

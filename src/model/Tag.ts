@@ -1,6 +1,6 @@
 export enum TagCategory {
-    ATMOSPHERE = 'Atmosphere',
     CUISINE = 'Cuisine',
+    MOOD = 'Mood',
     DRINKS = 'Drinks',
     BUDGET = 'Budget'
 }
@@ -63,7 +63,7 @@ export default class Tag {
     }
 
     static getAllTagCategories = () => {
-        return [ TagCategory.CUISINE, TagCategory.ATMOSPHERE, TagCategory.DRINKS, TagCategory.BUDGET ];
+        return [ TagCategory.CUISINE, TagCategory.MOOD, TagCategory.DRINKS, TagCategory.BUDGET ];
     }
 
     static getTagsByCategory = (category : TagCategory) => {
@@ -72,15 +72,15 @@ export default class Tag {
     }
 
     // Ambiance
-    static LOCALSONLY = new Tag('LOCALSONLY', 'Locals only', TagCategory.ATMOSPHERE);
-    static POPULAR = new Tag('POPULAR', 'Popular', TagCategory.ATMOSPHERE);
-    static DATE = new Tag('DATE', 'Perfect for dates', TagCategory.ATMOSPHERE);
-    static SHARING = new Tag('SHARING', 'Perfect for sharing', TagCategory.ATMOSPHERE);
-    static QUIRKY = new Tag('QUIRKY', 'Quirky', TagCategory.ATMOSPHERE);
-    static FAST = new Tag('FAST', 'Fast', TagCategory.ATMOSPHERE);
-    static MARKET = new Tag('MARKET', 'Market stall', TagCategory.ATMOSPHERE);
-    static INTIMATE = new Tag('INTIMATE', 'Intimate atmosphere', TagCategory.ATMOSPHERE);
-    static TAKEAWAY = new Tag('TAKEAWAY', 'Take away', TagCategory.ATMOSPHERE);
+    static LOCALSONLY = new Tag('LOCALSONLY', 'Locals only', TagCategory.MOOD);
+    static POPULAR = new Tag('POPULAR', 'Popular', TagCategory.MOOD);
+    static DATE = new Tag('DATE', 'Perfect for dates', TagCategory.MOOD);
+    static SHARING = new Tag('SHARING', 'Perfect for sharing', TagCategory.MOOD);
+    static QUIRKY = new Tag('QUIRKY', 'Quirky', TagCategory.MOOD);
+    static FAST = new Tag('FAST', 'Fast', TagCategory.MOOD);
+    static MARKET = new Tag('MARKET', 'Market stall', TagCategory.MOOD);
+    static INTIMATE = new Tag('INTIMATE', 'Intimate atmosphere', TagCategory.MOOD);
+    static TAKEAWAY = new Tag('TAKEAWAY', 'Take away', TagCategory.MOOD);
 
     // Food
     static PIZZA = new Tag('PIZZA', 'Great pizza', TagCategory.CUISINE);
