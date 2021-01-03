@@ -8,6 +8,7 @@ import Tag from '../../../model/Tag';
 interface IPlaceProps {
     place : Place;
     isLast ?: boolean;
+    tags : Tag[];
 }
 
 const PlaceTsx : React.FC<IPlaceProps> = props => {
@@ -16,7 +17,7 @@ const PlaceTsx : React.FC<IPlaceProps> = props => {
         <div className={`list-of-places-place ${isLastClassname}`}>
             <div className={`list-of-places-place-content`}>
                 <div className={`list-of-places-place-name`}>
-                    <Link to={`/places/${props.place.shortName}`}>{props.place.name}</Link>
+                    <Link to={`/places/${props.place.shortName}?${Tag.toQueryParam(props.tags)}`}>{props.place.name}</Link>
                 </div>
                 <div className={`list-of-places-place-tags`}>
                     <Tags tags={props.place.tags} size={'small'}/>

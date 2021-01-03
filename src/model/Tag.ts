@@ -71,6 +71,10 @@ export default class Tag {
         return allTags.filter(t => t.tagCategory == category);
     }
 
+    static toQueryParam = (tags : Tag[]) => {
+        return `tags=${JSON.stringify(tags)}`;
+    }
+
     // Ambiance
     static LOCALSONLY = new Tag('LOCALSONLY', 'Locals only', TagCategory.MOOD);
     static POPULAR = new Tag('POPULAR', 'Popular', TagCategory.MOOD);

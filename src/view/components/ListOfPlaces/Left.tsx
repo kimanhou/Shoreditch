@@ -29,15 +29,15 @@ const Left : React.FC<ILeftProps> = props => {
                         <SelectedTagsAndAddButton selectedTags={props.tags} onAdd={props.onAdd} onRemove={props.onRemove} />
                     </div>
                     <div className={`list-of-places-places`}>
-                        {props.places.slice(0, props.places.length - 1).map(t => <PlaceTsx place={t} />)}
-                        {props.places.slice(props.places.length - 1, props.places.length).map(t => <PlaceTsx place={t} isLast/>)}
+                        {props.places.slice(0, props.places.length - 1).map(t => <PlaceTsx tags={props.tags} place={t} />)}
+                        {props.places.slice(props.places.length - 1, props.places.length).map(t => <PlaceTsx tags={props.tags} place={t} isLast/>)}
                     </div>
                 </div>
 
                 <div className={`place-details-content ${placeDetailsVisibleClassname}`}>
                     {props.selectedPlace != null &&
                     <>
-                        <ArrowBack />
+                        <ArrowBack tags={props.tags}/>
                         <div className={`place-details-left-header`}>
                             {props.selectedPlace.name}
                         </div>

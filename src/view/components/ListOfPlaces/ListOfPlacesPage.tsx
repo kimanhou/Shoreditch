@@ -24,8 +24,7 @@ const ListOfPlacesPage : React.FC<IListOfPlacesPageProps> = props => {
     const setSelectedTags = (tags : Tag[]) => {
         const {tags : tagsParams, ...otherQueryParams} = queryParams;
         const search = Object.keys(otherQueryParams).map(key => `${key}=${encodeURIComponent(queryParams[key]!)}`);
-        const serializedTags = `tags=${JSON.stringify(tags)}`;
-        history.push(`${location.pathname}?${serializedTags}${search}`)
+        history.push(`${location.pathname}?${Tag.toQueryParam(tags)}${search}`)
     }
 
     const onAdd = (tag : Tag) => {
