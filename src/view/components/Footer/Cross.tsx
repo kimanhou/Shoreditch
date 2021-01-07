@@ -1,11 +1,7 @@
 import React from 'react';
 import './Cross.scss';
 
-interface ICrossProps {
-
-}
-
-const Cross : React.FC<ICrossProps> = props => {
+const Cross : React.FC = props => {
     return (
         <svg className={`cross`} viewBox="0 0 8.4666665 8.4666669" >
             <g>
