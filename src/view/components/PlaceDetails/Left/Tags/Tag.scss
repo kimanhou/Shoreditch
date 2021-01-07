@@ -6,6 +6,9 @@
     transition: color 0.4s, background-color 0.4s;
     transform: skewX(-20deg);
     margin-bottom: calc(var(--size-small-margin) / 4);
+    &.cursor-pointer {
+        cursor: pointer;
+    }
     >.place-details-tag-content {
         display: inline-block;
         padding: 0 10px;
@@ -13,6 +16,18 @@
         background-color: var(--color-off-white);
         >.place-details-tag-text {
             transform: skewX(20deg);
+            display: inline-block;
+        }
+        >.place-details-tag-close {
+            transform: skewX(20deg);
+            display: inline-block;
+            cursor: pointer;
+            padding-left: var(--size-very-small-margin);
+            color: var(--color-off-black);
+            transition: transform 0.4s;
+            &:hover {
+                transform: scale(1.2) skewX(20deg);
+            }
         }
         &:hover {
             color: var(--color-off-white);
@@ -27,6 +42,20 @@
         &:hover {
             >.place-details-tag-content {
                 border-color: var(--color-off-white);
+            }
+        }
+    }
+    &.selected {
+        >.place-details-tag-content {
+            color: var(--color-off-white);
+            background-color: var(--color-off-black);
+            &.can-be-unselected {
+                background: linear-gradient(to left, var(--color-off-white), var(--color-off-white) var(--size-close-button-width), var(--color-off-black) var(--size-close-button-width), var(--color-off-black));
+            }
+        }
+        &:hover {
+            >.place-details-tag-content {
+                border-color: var(--color-off-black);
             }
         }
     }

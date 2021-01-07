@@ -1,0 +1,7 @@
+.selected-tags {
+    display: flex;
+    flex-direction: row;
+    >* {
+        margin-right: var(--size-very-small-margin);
+    }
+}

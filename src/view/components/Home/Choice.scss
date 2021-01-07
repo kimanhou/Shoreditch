@@ -36,6 +36,10 @@
             left: 85%;
             transform: translateX(-85%) translateY(-50%);
         }
+        &.middle-x {
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
     }
     &:hover {
         box-shadow: 5px 5px 5px var(--color-yellow);

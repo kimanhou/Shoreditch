@@ -1,15 +1,16 @@
 import Social, { SocialMediaPlatform } from "./Social";
+import Tag from "./Tag";
 
 export default class Place {
     name : string;
     socialMedia : Social[];
-    tags : string[];
+    tags : Tag[];
     description : string;
     shortName : string;
     photoPlaceUrl : string;
     photoFoodUrl : string;
 
-    constructor(name : string, socialMedia : Social[], tags : string[], description : string, shortName : string, photoPlaceUrl : string, photoFoodUrl : string) {
+    constructor(name : string, socialMedia : Social[], tags : Tag[], description : string, shortName : string, photoPlaceUrl : string, photoFoodUrl : string) {
         this.name = name;
         this.socialMedia = socialMedia;
         this.tags = tags;

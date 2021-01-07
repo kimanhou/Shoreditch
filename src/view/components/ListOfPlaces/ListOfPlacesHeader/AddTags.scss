@@ -1,0 +1,36 @@
+.add-tags {
+    overflow: hidden;
+    transition: max-height 0.4s;
+    &.visible {
+        max-height: 100vh;
+    }
+    &.hidden {
+        max-height: 0;
+    }
+    >.all-tags {
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-top: dashed 2px var(--color-off-black);
+        display: flex;
+        padding: 0 var(--size-tiny-margin);
+        padding-top: var(--size-very-small-margin);
+        >.tag-category {
+            >.tag-category-header {
+                font-size: var(--size-secondary-font-size);
+                margin-bottom: var(--size-tiny-margin);
+            }
+        }
+        >* {
+            margin-right: var(--size-very-small-margin);
+        }
+    }
+}
+
+@media screen and (max-width: 1097px) {
+    .add-tags {
+        >.add-tags-plus {
+            line-height: calc(var(--size-default-font-size) * 2);
+            margin-top: 0;
+        }
+    }
+}
