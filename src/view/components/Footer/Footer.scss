@@ -1,0 +1,17 @@
+.footer {
+    background-color: var(--color-off-white);
+    display: flex;
+    flex-direction: row;
+    padding: calc(var(--size-very-small-margin) / 2) var(--size-very-small-margin);
+    >.footer-copyright {
+        flex: 1;
+        line-height: var(--size-footer-social-height);
+        >.shoreditch-by-maki {
+            display: inline-block;
+        }
+        >.year {
+            vertical-align: top;
+            margin-left: var(--size-tiny-margin);
+        }
+    }
+}

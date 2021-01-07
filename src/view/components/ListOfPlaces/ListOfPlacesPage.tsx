@@ -5,6 +5,7 @@ import ListOfPlaces from './ListOfPlaces';
 import Place from '../../../model/Place';
 import { useQueryParams } from '../../hooks/UseQueryParams';
 import Tag from '../../../model/Tag';
+import Footer from '../Footer/Footer';
 
 interface IListOfPlacesPageProps {
     places : Place[];
@@ -47,6 +48,7 @@ const ListOfPlacesPage : React.FC<IListOfPlacesPageProps> = props => {
         <div className={`list-of-places-page`}>
             <Header hasBackground/>
             <ListOfPlaces places={displayedPlaces} selectedPlace={selectedPlace} tags={tags} onAdd={onAdd} onRemove={onRemove}/>
+            <Footer />
         </div>
     )
 }

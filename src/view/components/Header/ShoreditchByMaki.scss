@@ -1,0 +1,28 @@
+.shoreditch-by-maki {
+    >.shoreditch {
+        font-family: ReenieBeanie;
+        font-size: var(--size-secondary-font-size);
+        >.o {
+            display: inline-block;
+            transform: rotate(40deg);
+            -webkit-transform: rotate(40deg);
+        }
+    }
+    >.by-maki {
+        font-family: AmaticSC;
+        font-style: bold;
+        font-size: calc(var(--size-secondary-font-size) / 2.5);
+        margin-left: 100px;
+        margin-top: -25px;
+    }
+    &.is-header {
+        >.shoreditch {
+            font-size: var(--size-header-font-size);
+        }
+        >.by-maki {
+            font-size: calc(var(--size-header-font-size) / 2.5);
+            margin-left: 300px;
+            margin-top: -25px;
+        }
+    }
+}

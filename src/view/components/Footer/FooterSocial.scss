@@ -1,0 +1,16 @@
+.footer-social {
+    height: var(--size-footer-social-height);
+    width: var(--size-footer-social-height);
+    display: inline-block;
+    background-position: center;
+    background-size: 100%;
+    &.mail {
+        background-image: url(../../../images/icon-mail.svg);
+    }
+    &.instagram {
+        background-image: url(../../../images/icon-instagram.svg);
+    }
+    &.website {
+        background-image: url(../../../images/icon-website.svg);
+    }
+}
