@@ -6,6 +6,7 @@
     >.footer-copyright {
         flex: 1;
         line-height: var(--size-footer-social-height);
+        margin-right: var(--size-tiny-margin);
         >.shoreditch-by-maki {
             display: inline-block;
         }
@@ -13,5 +14,12 @@
             vertical-align: top;
             margin-left: var(--size-tiny-margin);
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: block;
+        text-align: center;
     }
 }
