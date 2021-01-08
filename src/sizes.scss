@@ -8,6 +8,7 @@
     --size-very-small-margin: 20px;
     --size-tiny-margin: 5px;
     --size-close-button-width: 25px;
+    --size-footer-social-height: 40px;
 }
 
 @media screen and (max-width: 600px) {
@@ -16,5 +17,6 @@
         --size-header-font-size: 70px;
         --size-margin: 20px;
         --size-margin-top: 100px;
+        --size-footer-social-height: 30px;
     }
 }
