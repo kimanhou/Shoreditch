@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "0e24adb7db2fe7dfe76c",
-    "url": "./static/css/main.a92da706.chunk.css"
+    "revision": "df47d7eb792e088fb8d9",
+    "url": "./static/css/main.93532bf6.chunk.css"
   },
   {
-    "revision": "0e24adb7db2fe7dfe76c",
-    "url": "./static/js/main.0e24adb7.chunk.js"
+    "revision": "df47d7eb792e088fb8d9",
+    "url": "./static/js/main.df47d7eb.chunk.js"
   },
   {
     "revision": "795f29696add77c519c2",
@@ -16,20 +16,24 @@ self.__precacheManifest = [
     "url": "./static/js/runtime~main.4a686d48.js"
   },
   {
-    "revision": "b9de7658afae1fccab285540339f7b93",
-    "url": "./static/media/AmaticSC-Bold.b9de7658.woff"
-  },
-  {
     "revision": "09a2fa178cd3968fc819fe8ae210eb28",
     "url": "./static/media/AmaticSC-Regular.09a2fa17.woff"
   },
   {
-    "revision": "e9a42e339f93a719c17be53c386dbbfb",
-    "url": "./static/media/AmaticSC-Regular.e9a42e33.ttf"
+    "revision": "d254f533d9bb6fe4e84b07f21062381c",
+    "url": "./static/media/AnticDidone-Regular.d254f533.woff"
   },
   {
     "revision": "8ba765ce9580a3bdae76b59130d0ef8a",
     "url": "./static/media/AmaticSC-Bold.8ba765ce.ttf"
+  },
+  {
+    "revision": "b9de7658afae1fccab285540339f7b93",
+    "url": "./static/media/AmaticSC-Bold.b9de7658.woff"
+  },
+  {
+    "revision": "e9a42e339f93a719c17be53c386dbbfb",
+    "url": "./static/media/AmaticSC-Regular.e9a42e33.ttf"
   },
   {
     "revision": "e917b5a9dcd9a24157425a9aee6da804",
@@ -37,15 +41,11 @@ self.__precacheManifest = [
   },
   {
     "revision": "dd40f505e7756d8cadc37ade775839d2",
-    "url": "./static/media/ReenieBeanie-Regular.dd40f505.woff"
-  },
-  {
-    "revision": "d254f533d9bb6fe4e84b07f21062381c",
-    "url": "./static/media/AnticDidone-Regular.d254f533.woff"
+    "url": "./static/media/ReenieBeanie-Regular.dd40f505.ttf"
   },
   {
     "revision": "dd40f505e7756d8cadc37ade775839d2",
-    "url": "./static/media/ReenieBeanie-Regular.dd40f505.ttf"
+    "url": "./static/media/ReenieBeanie-Regular.dd40f505.woff"
   },
   {
     "revision": "9288fd6e95b63e37c6f2e10513fc2f8a",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "./static/media/shoreditch-map.3a48f2ac.png"
   },
   {
-    "revision": "61364b0247a18657c54ef3e1aff9d6d6",
+    "revision": "2eb9b4e1f2cfa37317494eac381ce6a8",
     "url": "./index.html"
   }
 ];
