@@ -50,17 +50,13 @@
     .choice {
         position: relative;
         font-size: calc(var(--size-header-font-size) / 2.5);
-        width: 66vw;
+        min-width: 66vw;
         margin-left: 17vw;
-        margin-top: var(--size-margin);
+        margin-top: 30px;
         &.middle-y {
             top: unset;
             transform: unset;
-            &.left-x {
-                left: unset;
-                transform: unset;
-            }
-            &.right-x {
+            &.left-x, &.right-x, &.middle-x {
                 left: unset;
                 transform: unset;
             }
