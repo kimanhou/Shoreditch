@@ -9,3 +9,9 @@
         color: (--color-yellow);
     }
 }
+
+@media screen and (max-width: 600px) {
+    .arrow-back-place-details {
+        left: 0;
+    }
+}
