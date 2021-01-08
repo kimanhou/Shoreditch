@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "df47d7eb792e088fb8d9",
-    "url": "./static/css/main.93532bf6.chunk.css"
+    "revision": "f70450257306fd2c917a",
+    "url": "./static/css/main.563ad2df.chunk.css"
   },
   {
-    "revision": "df47d7eb792e088fb8d9",
-    "url": "./static/js/main.df47d7eb.chunk.js"
+    "revision": "f70450257306fd2c917a",
+    "url": "./static/js/main.f7045025.chunk.js"
   },
   {
     "revision": "795f29696add77c519c2",
@@ -20,32 +20,32 @@ self.__precacheManifest = [
     "url": "./static/media/AmaticSC-Regular.09a2fa17.woff"
   },
   {
-    "revision": "d254f533d9bb6fe4e84b07f21062381c",
-    "url": "./static/media/AnticDidone-Regular.d254f533.woff"
+    "revision": "e9a42e339f93a719c17be53c386dbbfb",
+    "url": "./static/media/AmaticSC-Regular.e9a42e33.ttf"
   },
   {
-    "revision": "8ba765ce9580a3bdae76b59130d0ef8a",
-    "url": "./static/media/AmaticSC-Bold.8ba765ce.ttf"
+    "revision": "d254f533d9bb6fe4e84b07f21062381c",
+    "url": "./static/media/AnticDidone-Regular.d254f533.woff"
   },
   {
     "revision": "b9de7658afae1fccab285540339f7b93",
     "url": "./static/media/AmaticSC-Bold.b9de7658.woff"
   },
   {
-    "revision": "e9a42e339f93a719c17be53c386dbbfb",
-    "url": "./static/media/AmaticSC-Regular.e9a42e33.ttf"
-  },
-  {
     "revision": "e917b5a9dcd9a24157425a9aee6da804",
     "url": "./static/media/AnticDidone-Regular.e917b5a9.ttf"
   },
   {
-    "revision": "dd40f505e7756d8cadc37ade775839d2",
-    "url": "./static/media/ReenieBeanie-Regular.dd40f505.ttf"
+    "revision": "8ba765ce9580a3bdae76b59130d0ef8a",
+    "url": "./static/media/AmaticSC-Bold.8ba765ce.ttf"
   },
   {
     "revision": "dd40f505e7756d8cadc37ade775839d2",
     "url": "./static/media/ReenieBeanie-Regular.dd40f505.woff"
+  },
+  {
+    "revision": "dd40f505e7756d8cadc37ade775839d2",
+    "url": "./static/media/ReenieBeanie-Regular.dd40f505.ttf"
   },
   {
     "revision": "9288fd6e95b63e37c6f2e10513fc2f8a",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "./static/media/shoreditch-map.3a48f2ac.png"
   },
   {
-    "revision": "2eb9b4e1f2cfa37317494eac381ce6a8",
+    "revision": "901b9446840a5e582fd3e61a596ff675",
     "url": "./index.html"
   }
 ];
