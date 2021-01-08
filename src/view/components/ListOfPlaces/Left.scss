@@ -3,7 +3,6 @@
     margin-top: var(--size-small-margin);
     margin-left: var(--size-margin);
     margin-bottom: var(--size-small-margin);
-    background-color: var(--color-off-white);
     position: relative;
     z-index: 1;
     >.big-container {
@@ -15,6 +14,7 @@
             display: inline-block;
             width: 50%;
             vertical-align: top;
+            background-color: var(--color-off-white);
             >.list-of-places-header {
                 color: var(--color-off-black);
                 font-family: AmaticSC;
@@ -33,6 +33,8 @@
             display: inline-block;
             width: 50%;
             vertical-align: top;
+            background-color: var(--color-off-white);
+            margin-bottom: var(--size-very-small-margin);
             >.place-details-left-header {
                 background-color: var(--color-off-black);
                 color: var(--color-off-white);
