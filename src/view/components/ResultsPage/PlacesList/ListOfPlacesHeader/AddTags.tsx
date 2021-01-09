@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import TagModel from '../../../../model/Tag';
-import Tag from '../../PlaceDetails/Left/Tags/Tag';
+import TagModel from '../../../../../model/Tag';
+import Tag from '../../PlaceDetails/Tags/Tag';
 import './AddTags.scss';
 
 interface IAddTagsProps {

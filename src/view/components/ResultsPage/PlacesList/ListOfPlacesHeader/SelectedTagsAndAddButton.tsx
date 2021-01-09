@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Tag from '../../../../model/Tag';
+import Tag from '../../../../../model/Tag';
 import AddTags from './AddTags';
 import SelectedTags from './SelectedTags';
 import './SelectedTagsAndAddButton.scss';

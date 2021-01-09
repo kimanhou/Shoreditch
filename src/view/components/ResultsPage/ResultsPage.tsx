@@ -1,17 +1,17 @@
 import React from 'react';
 import { useHistory, useLocation, useParams } from 'react-router';
 import Header from '../Header/Header';
-import ListOfPlaces from './ListOfPlaces';
+import Results from './Results';
 import Place from '../../../model/Place';
 import { useQueryParams } from '../../hooks/UseQueryParams';
 import Tag from '../../../model/Tag';
 import Footer from '../Footer/Footer';
 
-interface IListOfPlacesPageProps {
+interface IResultsPageProps {
     places : Place[];
 }
 
-const ListOfPlacesPage : React.FC<IListOfPlacesPageProps> = props => {
+const ResultsPage : React.FC<IResultsPageProps> = props => {
     const queryParams = useQueryParams();
     let tagsString = queryParams['tags'];
     let tags : Tag[] = [];
@@ -45,12 +45,12 @@ const ListOfPlacesPage : React.FC<IListOfPlacesPageProps> = props => {
     var selectedPlace = props.places.find(t => t.shortName == placeShortName);
 
     return(
-        <div className={`list-of-places-page`}>
+        <div className={`results-page`}>
             <Header hasBackground/>
-            <ListOfPlaces places={displayedPlaces} selectedPlace={selectedPlace} tags={tags} onAdd={onAdd} onRemove={onRemove}/>
+            <Results places={displayedPlaces} selectedPlace={selectedPlace} tags={tags} onAdd={onAdd} onRemove={onRemove}/>
             <Footer />
         </div>
     )
 }
 
-export default ListOfPlacesPage;
+export default ResultsPage;

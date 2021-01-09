@@ -1,4 +1,4 @@
-.right-photo {
+.place-details-photo {
     height: 33vh;
     width: 33vh;
     background-size: cover;
@@ -6,13 +6,13 @@
     margin-bottom: var(--size-small-margin);
     position: relative;
     border: solid 2px var(--color-yellow);
-    >.right-photo-caption, >.right-photo-photo-credits {
+    >.place-details-photo-caption, >.place-details-photo-photo-credits {
         opacity: 0;
         transition: opacity 0.4s;
         position: absolute;
         color: var(--color-yellow);
     }
-    >.right-photo-caption {
+    >.place-details-photo-caption {
         font-family: ReenieBeanie;
         font-size: var(--size-secondary-font-size);
         text-align: center;
@@ -20,12 +20,12 @@
         top: 50%;
         transform: translateY(-50%);
     }
-    >.right-photo-photo-credits {
+    >.place-details-photo-photo-credits {
         font-family: AmaticSC;
         bottom: 0;
         right: 2px;
     }
-    >.right-photo-background-hover {
+    >.place-details-photo-background-hover {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -34,17 +34,17 @@
         transition: opacity 0.4s;
     }
     &:hover {
-        >.right-photo-background-hover {
+        >.place-details-photo-background-hover {
             opacity: 0.5;
         }
-        >.right-photo-caption, >.right-photo-photo-credits {
+        >.place-details-photo-caption, >.place-details-photo-photo-credits {
             opacity: 1;
         }
     }
 }
 
 @media screen and (max-width: 600px) {
-    .right-photo {
+    .place-details-photo {
         height: calc(100vw - (var(--size-margin) * 2));
         width: calc(100vw - (var(--size-margin) * 2));
     }

@@ -5,7 +5,7 @@ import Place from './model/Place';
 import Social, { SocialMediaPlatform } from './model/Social';
 import Tag from './model/Tag';
 import HomePage from './view/components/Home/HomePage';
-import ListOfPlacesPage from './view/components/ListOfPlaces/ListOfPlacesPage';
+import ResultsPage from './view/components/ResultsPage/ResultsPage';
 import QuestionPage from './view/components/Questions/QuestionPage';
 
 const App : React.FunctionComponent = props => {
@@ -27,7 +27,7 @@ const App : React.FunctionComponent = props => {
                         <HomePage />
                     </Route>
                     <Route path={["/places/:placeShortName", "/places/"]}>
-                        <ListOfPlacesPage places={places} />
+                        <ResultsPage places={places} />
                     </Route>
                     <Route path={["/questions/:stepNumber", "/questions/"]}>
                         <QuestionPage />
