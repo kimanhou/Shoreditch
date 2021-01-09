@@ -1,7 +1,7 @@
 {
-  "main.css": "./static/css/main.563ad2df.chunk.css",
-  "main.js": "./static/js/main.f7045025.chunk.js",
-  "main.js.map": "./static/js/main.f7045025.chunk.js.map",
+  "main.css": "./static/css/main.2da84855.chunk.css",
+  "main.js": "./static/js/main.289bfdb3.chunk.js",
+  "main.js.map": "./static/js/main.289bfdb3.chunk.js.map",
   "static/js/1.795f2969.chunk.js": "./static/js/1.795f2969.chunk.js",
   "static/js/1.795f2969.chunk.js.map": "./static/js/1.795f2969.chunk.js.map",
   "runtime~main.js": "./static/js/runtime~main.4a686d48.js",
@@ -11,8 +11,8 @@
   "static/media/Header.scss": "./static/media/brick.c930b9f6.jpg",
   "static/media/HungryThirsty.scss": "./static/media/home.a7e04368.jpg",
   "static/media/Map.scss": "./static/media/shoreditch-map.3a48f2ac.png",
-  "static/css/main.563ad2df.chunk.css.map": "./static/css/main.563ad2df.chunk.css.map",
+  "static/css/main.2da84855.chunk.css.map": "./static/css/main.2da84855.chunk.css.map",
   "index.html": "./index.html",
-  "precache-manifest.f3dbfb1465a1850e91da5e0d4dcf2e7d.js": "./precache-manifest.f3dbfb1465a1850e91da5e0d4dcf2e7d.js",
+  "precache-manifest.8eb1e7d4a1bace6a37385f0238e2918a.js": "./precache-manifest.8eb1e7d4a1bace6a37385f0238e2918a.js",
   "service-worker.js": "./service-worker.js"
 }
