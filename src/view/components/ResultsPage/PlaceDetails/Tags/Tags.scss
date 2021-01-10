@@ -1,0 +1,22 @@
+.place-details-tags {
+    margin-top: calc(var(--size-small-margin) / 4);
+    >.place-details-tags-column {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        &.right {
+            text-align: right;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .place-details-tags {
+        >.place-details-tags-column { 
+            &.right {
+                margin-left: 0;
+                transform: translateX(calc(var(--size-tiny-margin) * -1));
+            }
+        }
+    }
+}

@@ -9,6 +9,8 @@
 
 @media screen and (max-width: 600px) {
     .home {
-        padding-top: var(--size-margin-top);
+        height: unset;
+        padding: var(--size-header-margin-top) 0;
+        flex: 1;
     }
 }

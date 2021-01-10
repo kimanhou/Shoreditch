@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import './RightPhoto.scss';
+import './PlaceDetailsPhoto.scss';
 
-interface IRightPhotoProps {
+interface IPlaceDetailsPhotoProps {
     caption : string;
     photoCredits : string;
     url : string;
 }
 
-const RightPhoto : React.FC<IRightPhotoProps> = props => {
+const PlaceDetailsPhoto : React.FC<IPlaceDetailsPhotoProps> = props => {
     const [thumbnailUrl, setThumbnailUrl] = useState<string | null>(null);
     useEffect(() => {
         fetch(`https://graph.facebook.com/v9.0/instagram_oembed?url=${props.url}&access_token=857325501713225|f2b27b7ab1af66fad966fe773ffcaaf3`)
@@ -22,16 +22,16 @@ const RightPhoto : React.FC<IRightPhotoProps> = props => {
     }, []);
 
     return(
-        <div className={`right-photo`} style={{ backgroundImage: `url('${thumbnailUrl}')` }}>
-            <div className={`right-photo-background-hover`}></div>
-            <div className='right-photo-caption'>
+        <div className={`place-details-photo`} style={{ backgroundImage: `url('${thumbnailUrl}')` }}>
+            <div className={`place-details-photo-background-hover`}></div>
+            <div className='place-details-photo-caption'>
                 {props.caption}
             </div>
-            <div className='right-photo-photo-credits'>
+            <div className='place-details-photo-photo-credits'>
                 {props.photoCredits}
             </div>
        </div>
     )
 }
 
-export default RightPhoto;
+export default PlaceDetailsPhoto;

@@ -6,3 +6,9 @@
     background-size: cover;
     background-position: 50% 46%;
 }
+
+@media screen and (max-width: 600px) {
+    .hungry-thirsty {
+        padding-top: var(--size-header-height);
+    }
+}

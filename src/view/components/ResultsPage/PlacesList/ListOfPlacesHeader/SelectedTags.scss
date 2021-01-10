@@ -1,6 +1,7 @@
 .selected-tags {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     >* {
         margin-right: var(--size-very-small-margin);
     }

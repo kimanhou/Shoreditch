@@ -1,14 +1,15 @@
-.list-of-places {
+.results {
     position: relative;
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
     overflow: hidden;
+    >.container{
+        width: 200%;
+        position: relative;
+        z-index: 1;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    .list-of-places {
+    .results {
         display: block;
         justify-content: unset;
         flex-direction: unset;

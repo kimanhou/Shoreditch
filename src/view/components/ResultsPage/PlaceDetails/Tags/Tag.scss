@@ -17,6 +17,7 @@
         >.place-details-tag-text {
             transform: skewX(20deg);
             display: inline-block;
+            white-space: nowrap;
         }
         >.place-details-tag-close {
             transform: skewX(20deg);

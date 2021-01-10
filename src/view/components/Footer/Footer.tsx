@@ -12,7 +12,7 @@ const Footer : React.FC<IFooterProps> = props => {
         <div className={`footer`}>
             <div className={`footer-copyright`}>
                 <ShoreditchByMaki />
-                <span className={`year`}>| 2021 &copy;</span>
+                <span className={`year`}> | 2021 &copy;</span>
             </div>
             
             <div className={`footer-social-media`}>

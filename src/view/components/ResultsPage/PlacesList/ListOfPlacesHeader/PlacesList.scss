@@ -1,0 +1,32 @@
+.places-list {
+    position: relative;
+    left: 0;
+    transition: left 0.8s;
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    >.places-list-content{
+        width: calc(50% - var(--size-margin));
+        margin-top: var(--size-small-margin);
+        margin-left: var(--size-margin);
+        margin-bottom: var(--size-small-margin);
+        background-color: var(--color-off-white);
+        >.places-list-header {
+            color: var(--color-off-black);
+            font-family: AmaticSC;
+            font-size: var(--size-header-font-size);
+            text-align: center;
+            padding: 5px;
+        }
+    }
+    &.hidden {
+        left: -100vw;
+    }
+}
+@media screen and (max-width: 600px) {
+    .places-list {
+        >.places-list-content {
+            width: calc(100% - (var(--size-margin) * 2));
+        }
+    }
+}

@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link, useHistory, useLocation } from 'react-router-dom';
-import Tag from '../../../../model/Tag';
-import { useQueryParams } from '../../../hooks/UseQueryParams';
+import { Link } from 'react-router-dom';
+import Tag from '../../../../../model/Tag';
 import './ArrowBack.scss';
 
 interface IArrowBackProps {

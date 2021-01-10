@@ -26,3 +26,16 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .shoreditch-by-maki {
+        >.by-maki {
+            margin-top: -12px;
+        }
+        &.is-header {
+            >.by-maki {
+                margin-left: 200px;
+            }
+        }
+    }
+}

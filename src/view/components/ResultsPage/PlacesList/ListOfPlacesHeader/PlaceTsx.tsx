@@ -1,9 +1,9 @@
 import React from 'react';
 import './PlaceTsx.scss';
-import Place from '../../../model/Place';
-import Tags from '../PlaceDetails/Left/Tags/Tags';
 import { Link } from 'react-router-dom';
-import Tag from '../../../model/Tag';
+import Place from '../../../../../model/Place';
+import Tag from '../../../../../model/Tag';
+import Tags from '../../PlaceDetails/Tags/Tags';
 
 interface IPlaceProps {
     place : Place;
