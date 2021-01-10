@@ -55,6 +55,20 @@ export default class Tag {
         return false;
     }
 
+    static listEquals = (tags1 : Tag[], tags2 : Tag[]) => {
+        for (let t of tags1) {
+            if (!t.isIncluded(tags2)) {
+                return false;
+            }
+        }
+        for (let t of tags2) {
+            if (!t.isIncluded(tags1)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     static getAllTags = () => {
         return [ Tag.LOCALSONLY, Tag.POPULAR, Tag.DATE, Tag.SHARING, Tag.QUIRKY, Tag.FAST, Tag.MARKET, Tag.INTIMATE, Tag.TAKEAWAY,
                  Tag.PIZZA, Tag.SUSHI, Tag.INDIAN, Tag.BURGER, Tag.ITALIAN, Tag.FRENCH, Tag.ASIAN,

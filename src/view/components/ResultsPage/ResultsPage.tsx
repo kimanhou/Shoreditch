@@ -6,6 +6,7 @@ import Place from '../../../model/Place';
 import { useQueryParams } from '../../hooks/UseQueryParams';
 import Tag from '../../../model/Tag';
 import Footer from '../Footer/Footer';
+import Filters from '../../../business/Filters';
 
 interface IResultsPageProps {
     places : Place[];
@@ -18,7 +19,7 @@ const ResultsPage : React.FC<IResultsPageProps> = props => {
     if (tagsString != undefined) {
         tags = (JSON.parse(tagsString) as string[]).map(Tag.deserialize);
     }
-    let displayedPlaces = props.places.filter(t => Tag.intersects(t.tags, tags));
+    let displayedPlaces = Filters.getPlaces(tags);
     
     const history = useHistory();
     const location = useLocation();
